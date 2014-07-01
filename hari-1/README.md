@@ -1,5 +1,4 @@
 ##hari 1
-======
 
 ###1. php oop
 woco dewe yak :v
