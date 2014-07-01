@@ -19,6 +19,7 @@ yii-ceria
 
 ###Jumat
 1. Composer
-2. Best practice
+2. Deploy ke apache
+3. Best practice
 
 gl hf
