@@ -15,12 +15,17 @@ http://www.php.net/manual/en/language.oop5.php
 2. cd ke folder aplikasi
 3. jalankan `php -S localhost:80`
 
-###3. MVC
+###3. setup ide
+1. download netbeans
+2. install yii plugin
+3. fix autocomple 
+
+###4. MVC
 woco dewe meneh :v
 http://www.yiiframework.com/doc/guide/1.1/en/basics.mvc
 
-###4. Controller
+###5. Controller
 http://www.yiiframework.com/doc/guide/1.1/en/basics.controller
 
-###5. View
+###6. View Intro
 
