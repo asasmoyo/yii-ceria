@@ -4,21 +4,23 @@ yii-ceria
 ###hari 1
 1. PHP OOP
 2. Setup Yii App
-3. MVC
-4. Controller
-5. View
+3. Setup IDE
+4. MVC
+5. Controller
+6. View Intro.
 
 ###hari 2
-1. Konfigurasi database
-2. Migration
-3. Gii
-4. Model
-5. Form
+1. View Cont.
+2. Konfigurasi database
+3. Migration
+4. Gii
+5. Model
+6. Form
 
 ###hari 3
 1. Authentication
 2. Module
-3. Extension
+3. Extension + Configuration
 4. Template
 
 ###hari 4
