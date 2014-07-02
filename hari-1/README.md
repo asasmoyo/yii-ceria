@@ -6,15 +6,15 @@ http://www.php.net/manual/en/language.oop5.php
 
 ###2. setup yii app
 ####2.1. membuat aplikasi yii
-1. tambahkan php ke path
-2. download yii di http://www.yiiframework.com/download/
-3. extract
-4. buka terminal terus jalankan `/path/ke/yiic webapp /path/ke/aplikasi`
+1. download yii di http://www.yiiframework.com/download/
+2. extract
+3. buka terminal terus jalankan `/path/ke/yiic webapp /path/ke/aplikasi`
 
 ####2.2. menjalankan yii menggunakan php builtin server
-1. buka terminal
-2. cd ke folder aplikasi
-3. jalankan `php -S localhost:80`
+1. tambahkan php ke path
+2. buka terminal
+3. cd ke folder aplikasi
+4. jalankan `php -S localhost:80`
 
 ###3. setup ide
 1. download netbeans
