@@ -18,6 +18,7 @@ http://www.php.net/manual/en/language.oop5.php
 ###3. setup ide
 1. download netbeans
 2. install yii plugin
+di tools -> plugin -> available plugin -> yii framework
 3. fix autocomple 
 http://www.yiiframework.com/wiki/83/netbeans-ide-and-yii-projects/
 
