@@ -20,7 +20,7 @@ http://www.php.net/manual/en/language.oop5.php
 1. download netbeans
 2. install yii plugin
 di tools -> plugin -> available plugin -> yii framework
-3. fix autocomple 
+3. fix autocomplete 
 http://www.yiiframework.com/wiki/83/netbeans-ide-and-yii-projects/
 
 ###4. MVC
