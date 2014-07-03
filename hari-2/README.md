@@ -29,3 +29,13 @@
     'tablePrefix' => 'tbl_',
 ),`
 
+###4. database migration
+referensi http://www.yiiframework.com/doc/guide/1.1/en/database.migration 
+command untuk manipulasi database http://www.yiiframework.com/doc/guide/1.1/en/database.query-builder#building-schema-manipulation-queries
+1. untuk membuat migration: `protected/yiic migrate create nama_migration`
+2. untuk mengeksekusi migration: `protected/yiic migrate`
+3. untuk mengembalikan migration: `protected/yiic migrate down n` dengan n banyak migration yg mau dikembalikan
+
+###5. gii
+1. enable gii di `protected/config/main.php` pada bagian modules uncomment gii
+2. buka `/gii`

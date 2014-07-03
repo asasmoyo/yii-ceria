@@ -62,4 +62,21 @@ class CobaController extends Controller {
         ]);
     }
 
+    public function actionCoba5() {
+        $form = new PenjumlahanForm();
+        $hasil = 0;
+
+        if (isset($_POST['PenjumlahanForm'])) {
+            $form->attributes = $_POST['PenjumlahanForm'];
+            if ($form->validate()) {
+                $jumlah = $form->getHasil();
+            }
+        }
+
+        $this->render('coba5', [
+            'model' => $form,
+            'hasil' => $hasil
+        ]);
+    }
+
 }

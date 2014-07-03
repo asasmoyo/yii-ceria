@@ -23,6 +23,13 @@ class PenjumlahanForm extends CFormModel {
         ];
     }
 
+    public function attributeLabels() {
+        return [
+            'angka1' => 'Angka 1',
+            'angka2' => 'Angka 2',
+        ];
+    }
+
     public function getHasil() {
         return $this->angka1 + $this->angka2;
     }
