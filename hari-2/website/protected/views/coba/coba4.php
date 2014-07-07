@@ -1,3 +1,5 @@
+<p>Hasil: <?php echo $form->getHasil(); ?>
+
 <?php echo CHtml::errorSummary($form); ?>
 
 <?php echo CHtml::beginForm(); ?>

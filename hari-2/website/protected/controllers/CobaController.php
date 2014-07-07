@@ -70,12 +70,7 @@ class CobaController extends Controller {
             $form->attributes = $_POST['PenjumlahanForm'];
             
             //jalankan validasi
-            if ($form->validate()) {
-                echo $form->angka1 . ' - ' . $form->angka2;
-            } else {
-                echo 'eror';
-                var_dump($form->errors);
-            }
+            $form->validate();
         }
 
         //kalo ngga ada langsung render view
