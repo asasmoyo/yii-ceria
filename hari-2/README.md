@@ -11,11 +11,10 @@
 2. di `nama_view.php` bisa mengakses `$var1` dan `$var2`  
   
 ###2. form
-langkah2 untuk membuat form:
-1. referensi http://www.yiiframework.com/doc/guide/1.1/en/form.view  
-2. buat class di `protected/models`  
-3. classnya itu mengextends `CFormModel`  
-4. list rules: http://www.yiiframework.com/wiki/56/  
+referensi http://www.yiiframework.com/doc/guide/1.1/en/form.view  
+1. buat class di `protected/models`  
+2. classnya itu mengextends `CFormModel`  
+3. list rules: http://www.yiiframework.com/wiki/56/  
   
 ###3. konfigurasi database
 1. buka `protected/config/main.php`  

@@ -1,4 +1,4 @@
-<p>Hasil: <?php echo $hasil; ?>
+<p>Hasil: <?php echo $var1; ?></p>
 
 <form method="get">
     <input type="hidden" name="r" value="coba/coba3" />

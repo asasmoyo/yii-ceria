@@ -13,23 +13,25 @@
  */
 class CobaController extends Controller {
 
+    public function actionIndex() {
+        echo 'index';
+    }
+
     public function actionHelloWorld() {
-        echo 'Hello World!';
+        echo 'Hello World';
     }
 
     public function actionCoba1() {
-        echo 1 + 2 + 3;
+        echo '<p>hello world</p>';
     }
 
     public function actionCoba2() {
-        var_dump($_GET);
+        print_r($_GET);
 
-        $angka1 = $_GET['angka1'];
-        $angka2 = $_GET['angka2'];
-        $hasil = $angka1 + $angka2;
-        echo '<br/>hasil = ' . $hasil;
+        echo '<br/>';
+        echo $_GET['angka1'] + $_GET['angka2'];
 
-        echo '<form action="/index.php?r=coba/coba2" method="get">';
+        echo '<form method="get">';
         echo '<input type="hidden" name="r" value="coba/coba2" />';
         echo '<p><input type="text" name="angka1" /></p>';
         echo '<p><input type="text" name="angka2" /></p>';
@@ -38,44 +40,47 @@ class CobaController extends Controller {
     }
 
     public function actionCoba3() {
-        var_dump($_GET);
-
         $angka1 = isset($_GET['angka1']) ? $_GET['angka1'] : 0;
         $angka2 = isset($_GET['angka2']) ? $_GET['angka2'] : 0;
         $hasil = $angka1 + $angka2;
 
+        //cek angka1 tidak boleh kosong
+        if ($angka1 == '') {
+            echo 'angka1 tidak boleh kosong';
+        }
+
         $this->render('coba3', [
-            'hasil' => $hasil,
+            'var1' => $hasil,
         ]);
     }
 
     public function actionCoba4() {
+        //buat objek form
         $form = new PenjumlahanForm();
 
+        //cek apakah ada input
         if (isset($_POST['PenjumlahanForm'])) {
+            //kalo ada, input dibaca, terus nilai property objek diisi dari input
+            //cara ngga cepet
+//            $post = $_POST['PenjumlahanForm'];
+//            $form->angka1 = $post['angka1'];
+//            $form->angka2 = $post['angka2'];
+            
+            //cara cepet
             $form->attributes = $_POST['PenjumlahanForm'];
-            $form->validate();
-        }
-
-        $this->render('coba4', [
-            'form' => $form
-        ]);
-    }
-
-    public function actionCoba5() {
-        $form = new PenjumlahanForm();
-        $hasil = 0;
-
-        if (isset($_POST['PenjumlahanForm'])) {
-            $form->attributes = $_POST['PenjumlahanForm'];
+            
+            //jalankan validasi
             if ($form->validate()) {
-                $jumlah = $form->getHasil();
+                echo $form->angka1 . ' - ' . $form->angka2;
+            } else {
+                echo 'eror';
+                var_dump($form->errors);
             }
         }
 
-        $this->render('coba5', [
-            'model' => $form,
-            'hasil' => $hasil
+        //kalo ngga ada langsung render view
+        $this->render('coba4', [
+            'form' => $form,
         ]);
     }
 
