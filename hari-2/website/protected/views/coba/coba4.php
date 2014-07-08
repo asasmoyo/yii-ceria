@@ -1,4 +1,4 @@
-<p>Hasil: <?php echo $form->getHasil(); ?>
+<p>Hasil: <?php echo $form->getHasil(); ?></p>
 
 <?php echo CHtml::errorSummary($form); ?>
 
