@@ -21,7 +21,7 @@ class PenjumlahanForm extends CFormModel {
 //            ['list property (nek banyak dipisah ,)', 'rule', 'opsi (opsional)'],
             ['angka1, angka2', 'required'],
             ['angka1, angka2', 'numerical'],
-            ['angka1', 'length', 'min' => 2]
+            ['angka1', 'length', 'min' => 2, 'max' => 4]
         ];
     }
 

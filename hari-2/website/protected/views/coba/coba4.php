@@ -4,9 +4,9 @@
 
 <?php echo CHtml::beginForm(); ?>
 
-<p><?php echo CHtml::activeTextField($form, 'angka1'); ?></p>
+<p><?php echo CHtml::activeLabel($form, 'angka1'); ?> <?php echo CHtml::activeTextField($form, 'angka1'); ?></p>
 
-<p><?php echo CHtml::activeTextField($form, 'angka2'); ?></p>
+<p><?php echo CHtml::activeLabel($form, 'angka2'); ?> <?php echo CHtml::activeTextField($form, 'angka2'); ?></p>
 
 <p><?php echo CHtml::button('ok', ['type' => 'submit']); ?></p>
 

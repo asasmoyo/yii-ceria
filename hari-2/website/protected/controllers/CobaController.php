@@ -61,6 +61,7 @@ class CobaController extends Controller {
         //cek apakah ada input
         if (isset($_POST['PenjumlahanForm'])) {
             //kalo ada, input dibaca, terus nilai property objek diisi dari input
+            
             //cara ngga cepet
 //            $post = $_POST['PenjumlahanForm'];
 //            $form->angka1 = $post['angka1'];
@@ -70,7 +71,10 @@ class CobaController extends Controller {
             $form->attributes = $_POST['PenjumlahanForm'];
             
             //jalankan validasi
-            $form->validate();
+            if ($form->validate()) {
+                //kirim email
+                
+            }
         }
 
         //kalo ngga ada langsung render view
