@@ -4,14 +4,6 @@ session_start();
 
 class SiteController extends Controller {
 
-    public function init() {
-        $path = Yii::app()->basePath . '/vendor/facebook-php-sdk/autoload.php';
-        require_once $path;
-
-        \Facebook\FacebookSession::setDefaultApplication('539087272880106', 'df57322ce0478580e538043188e544e6');
-        return parent::init();
-    }
-
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
